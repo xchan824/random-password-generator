@@ -1,0 +1,120 @@
+body {
+    background-color: #1C1C1C;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    background-color: #1F2937;
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sub-container {
+    margin: 0 52px 0;
+}
+
+.sub-container h1 {
+    margin: 0 0 10px;
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+}
+
+.sub-container span {
+    color: #C4B5FD;
+}
+
+.sub-container p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #D5D4D8;
+}
+
+button {
+    margin: 0 0 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 9px 17px 9px 15px;
+    gap: 12px;
+    width: 191px;
+    height: 42px;
+    left: 52px;
+    top: 284px;
+    background-color: #8B5CF6;
+    color: white;
+    border-style: none;
+    border-radius: 6px;
+}
+
+hr {
+    margin: 30px 0 35px;
+    height: 1px;
+    background-color: #2F3E53;
+    border: none
+}
+
+.password-fields {
+    margin: 30px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-fields input,
+.password-fields select {
+    margin: 0 0 30px;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 211px;
+    height: 39px;
+    left: 52px;
+    top: 396px;
+    background: #273549;
+    color: #C4B5FD;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 32px;
+    border-style: none;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.sub-container label {
+    font-family: 'Inter', sans-serif;
+    color: #D5D4D8;
+}
+
+#include-symbols {
+    margin-left: 30px;
+}
+
+#notification {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #D5D4D8;
+    margin-top: 30px;
+}
+
+#copied-password {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}

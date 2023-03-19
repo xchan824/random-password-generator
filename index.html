@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="sub-container">
+            <h1>Generate a <br><span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <div class="password-fields">
+                <button id="generate-button" onclick="generatePassword()">Generate passwords</button>
+                <select name="password-length" id="password-length">
+                    <option value="" disabled selected>Password length</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                </select>
+            </div>
+            <input type="checkbox" id="include-numbers" name="numbers" value="Numbers" checked>
+            <label for="numbers">Include numbers</label>
+            <input type="checkbox" id="include-symbols" name="symbols" value="Symbols" checked>
+            <label for="symbols">Include symbols</label>
+            <hr>
+            <span id="notification">Click password to copy to clipboard</span><span id="copied-password"></span>
+            <div class="password-fields">
+                <input type="text" id="password-field-one" name="password-field-one" onclick="copyPasswordOne()" placeholder="Password 1" readonly>
+                <input type="text" id="password-field-two" name="password-field-two" onclick="copyPasswordTwo()" placeholder="Password 2" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
